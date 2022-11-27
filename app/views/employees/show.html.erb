@@ -1,0 +1,9 @@
+EMPLOYEE DETAILS
+<p style="color : red"> <strong> Name: </strong> <%= @emp.name%>
+<p> <strong> Phone: </strong> <%= @emp.phone%>
+<p> <strong> Email: </strong> <%= @emp.email%>
+<br>
+<br>
+<%= link_to 'back', '/employees'%>
+<td> <%= link_to 'edit', edit_employee_path(@emp)%> </td>
+

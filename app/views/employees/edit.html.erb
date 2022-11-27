@@ -1,0 +1,26 @@
+<h1>EDITEmployee</h1>
+<%=form_with model: @emp do |form| %>
+<div>
+<% if @emp.errors.any? %>
+<% @emp.errors.full_messages.each do |message| %>
+<p><%= message %></p>
+<% end %>
+<% end %>
+<%= form.label :name %><br>
+<%= form.text_field :name %>
+</div>
+<div>
+<%= form.label :phone%> <br>
+<%= form.text_field :phone %>
+</div>
+
+<div>
+
+<%= form.label :email %> <br>
+<%= form.email_field :email %>
+</div>
+
+<div>
+<%= form.submit%>
+</div>
+<% end %>
